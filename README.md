@@ -1,7 +1,7 @@
 # Vendor Performance Analysis
 
 ## 📌 Project Overview
-This project focuses on analyzing vendor performance by consolidating data from multiple sources, including purchases, sales, and freight costs. The goal is to evaluate vendors based on profitability, efficiency, and sales contribution using both Python and Power BI.
+This project focuses on analyzing vendor performance by bringing together data from multiple sources, such as purchases, sales, and freight costs. The goal is to analyze vendors based on profitability, efficiency, and sales contribution using both Python and Power BI.
 
 ## 🧰 Tools & Technologies
 - **Python**: Data processing and cleaning (pandas, sqlite3)
@@ -22,10 +22,10 @@ This project focuses on analyzing vendor performance by consolidating data from 
 ```
 
 ## 🔄 Workflow Summary
-1. **Data Ingestion**: CSV files ingested into SQLite using `ingestion_db.py`.
+1. **Data Ingestion**: CSV files ingested(loaded) into SQLite using `ingestion_db.py`.
 2. **SQL Querying**: Custom CTEs used to calculate purchase summaries, sales data, and freight costs.
 3. **Data Cleaning**: Handling missing values, data types, and formatting.
-4. **Feature Engineering**: Computed KPIs like profit margin, stock turnover, and sales-to-purchase ratio.
+4. **Feature Engineering**: Calculated KPIs like profit margin, stock turnover, and sales-to-purchase ratio.
 5. **Dashboarding**: Final metrics visualized in Power BI.
 
 ## 📊 Key Metrics
@@ -47,11 +47,9 @@ This project focuses on analyzing vendor performance by consolidating data from 
 5. Open `dashboard.pbix` in Power BI to view visualizations.
 
 ## 🧹 Data Handling
-- Missing values filled with zeros where applicable.
-- Removed trailing/leading spaces from text fields.
-- Logging enabled for transparency in each step.
+- Replaced missing values with 0 where it made sense, so that calculatiosn wouldn't be affected.
+- Removed extra spaces from text columns to keep data clean and consistent.
+- Used logging to clearly show each step taken, which helped in tracking and fixing issues.
 
 ## 📌 Note
-Data files are excluded for privacy. You may add sample data if needed for reproducibility.
-
----
+Data files are not incuded to protect privacy. You may add sample data if needed for testing the steps.

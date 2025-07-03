@@ -17,7 +17,7 @@ This project focuses on analyzing vendor performance by bringing together data f
 ├── ingestion_db.py             # Script to ingest data into SQLite DB
 ├── get_vendor_summary.py       # SQL logic + data cleaning + metrics calculation
 ├── Vendor Performance Analysis.ipynb  # EDA and visual exploration
-├── dashboard.pbix              # Power BI dashboard (optional if large)
+├── dashboard.pbix              # Power BI dashboard 
 └── README.md                   # Project documentation
 ```
 
